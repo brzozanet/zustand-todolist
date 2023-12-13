@@ -1,6 +1,7 @@
+// store.js
 import create from "zustand";
 
-export const useStore = create((set) => ({
+const useStore = create((set) => ({
   todos: [],
   addTodo: (todo) =>
     set((state) => ({
@@ -13,3 +14,5 @@ export const useStore = create((set) => ({
       ),
     })),
 }));
+
+export { useStore };

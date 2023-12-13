@@ -1,6 +1,7 @@
+// TodoItem.js
 import React from "react";
 
-export const TodoItem = ({ todo, onToggle }) => {
+const TodoItem = ({ todo, onToggle }) => {
   return (
     <div>
       <input type="checkbox" checked={todo.completed} onChange={onToggle} />
@@ -12,3 +13,5 @@ export const TodoItem = ({ todo, onToggle }) => {
     </div>
   );
 };
+
+export default TodoItem;
