@@ -1,9 +1,7 @@
-// TodoList.js
-import React from "react";
-import { useStore } from "./store";
-import TodoItem from "./TodoItem";
+import { useStore } from "../../store/store";
+import { TodoItem } from "../TodoItem/TodoItem";
 
-const TodoList = () => {
+export const TodoList = () => {
   const todos = useStore((state) => state.todos);
   const addTodo = useStore((state) => state.addTodo);
   const toggleTodo = useStore((state) => state.toggleTodo);
@@ -29,5 +27,3 @@ const TodoList = () => {
     </div>
   );
 };
-
-export default TodoList;
