@@ -1,14 +1,11 @@
-import { useState } from "react";
+import { TodoList } from "./components/TodoList";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export function App() {
   return (
     <>
       <h1>Zustand ToDo</h1>
+      <TodoList />
     </>
   );
 }
-
-export default App;
