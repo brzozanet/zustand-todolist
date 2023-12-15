@@ -1,11 +1,13 @@
-import create from "zustand";
+import { create } from "zustand";
 
 const useStore = create((set) => ({
   todos: [],
+
   addTodo: (todo) =>
     set((state) => ({
       todos: [...state.todos, { ...todo, id: state.todos.length + 1 }],
     })),
+
   toggleTodo: (id) =>
     set((state) => ({
       todos: state.todos.map((todo) =>
